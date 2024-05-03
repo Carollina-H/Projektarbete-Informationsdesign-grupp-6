@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Abdalai Khamel och Carollina Hillberg-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="style.css">
+    <title>Projektarbete</title>
 </head>
 <body>
+    <header>
+        <div class="header_img">
+            <img src="" alt="">
+        </div>
+    </header>
     
+    <main>
+        <section class="section1">
+            <div class="">
+                <h2>
+                    Hur mycket påverkas miljön av bilar i Umeå ?
+                </h2>
+                
+                <p>
+                    Vi har valt att jämföra personbilars växthusgasutsläpp med det totala utsläppet i Umeå kommun.
+                    Syftet är att ta reda på hur stor andel ligger på just personbilar och sedan informera människor
+                    om denna information.
+                </p> 
+            </div>
+            <div class="section1_svg">
+                <img src="" alt="">
+            </div>
+        </section>
+    
+        <section class="section2">
+            <h2>Har växthusgasutsläpp ökat eller minskat den senaste tiden?</h2>
+            <div>
+                <canvas id="totalChart"></canvas>
+            </div>
+            <p>Vi kan se här att...</p>
+        </section>
+    
+        <section class="section3">
+            <h2>Hur stor andel är på grund av transport generellt?</h2>
+            <div>
+                <canvas id="transportChart"></canvas>
+            </div>
+            <p>Vi kan se här att...</p>
+        </section>
+    
+        <section class="section4">
+            <h2>Hur stor växtgasutsläpp är på grund av personbilar?</h2>
+            <div>
+                <canvas id="carChart"></canvas>
+            </div>
+            <p>Vi kan se här att...</p>
+        </section>
+    
+        <section class="section5">
+            <h2>Vad blir vår slutsats?</h2>
+            <p></p>
+        </section>
+    
+    </main>
+   
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

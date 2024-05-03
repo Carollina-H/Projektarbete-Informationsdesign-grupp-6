@@ -1,0 +1,52 @@
+/* rgba(0,61,143,255) blå
+   rgba(212,0,0,255) red
+   rgba(238,238,238,255)
+   rgb(79,120,175) ljusblå 
+*/
+*{
+  width: auto;
+  margin: auto;
+}
+
+/* main {
+    padding-top: 4rem;
+    max-width: 90rem;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+main > div {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    min-height: 50vh;
+  } */
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444343;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.header_img{
+  background-color: #c45858;
+  width: auto;
+  height: 400px;
+}
+
+
+.section1_svg{
+  background-color: #444343;
+  width: auto;
+  height: 400px;
+}
+
+.section1{
+  
+}
