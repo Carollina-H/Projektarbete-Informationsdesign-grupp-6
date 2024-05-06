@@ -15,4 +15,8 @@ fetch(urlUm)
 
 /*Chart nummer 2 */
 
+/* histogram, CO2/år  2018-2022*/
+
 /*Chart nummer 3 */
+
+/* bar chart, sidled, nivålista sammanfattad, CO2/undersektor */
