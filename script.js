@@ -20,3 +20,6 @@ fetch(urlUm)
 /*Chart nummer 3 */
 
 /* bar chart, sidled, nivålista sammanfattad, CO2/undersektor */
+
+
+

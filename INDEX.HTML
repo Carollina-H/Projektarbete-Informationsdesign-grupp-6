@@ -11,15 +11,20 @@
 <body>
     <header>
         <div class="header_img">
-            <img src="./images/bild1.svg" alt="">
+            <img src="./images/Namnlöst-2.png" alt="">
         </div>
-        <div class="spece">
-            <!--ta bort om det inte behövs-->
-        </div>
+        <nav class="header_nav">
+            <button onclick="location.href='#section1'">Miljöpåverkan av Bilar</button>
+            <button onclick="location.href='#section2'">Utsläppstrender</button>
+            <button onclick="location.href='#section3'">Transportsektorns Andel</button>
+            <button onclick="location.href='#section4'">Personbilars Utsläpp</button>
+            <button onclick="location.href='#section5'">Slutsatser</button>
+        </nav>
+
     </header>
     
     <main>
-        <section class="section1">
+        <section id="section1" class="section1">
             <div class="">
                 <h2>
                     Hur mycket påverkas miljön av bilar i Umeå ?
@@ -36,10 +41,13 @@
             </div>
         </section>
     
-        <section class="section2">
+        <section id="section2" class="section2">
             <h2>
                 Har växthusgasutsläpp ökat eller minskat den senaste tiden?
             </h2>
+            <div class="section1_svg">
+                <img src="./images/climate_change_split.svg" alt="">
+            </div>
             <div>
                 <canvas id="totalChart"></canvas>
             </div>
@@ -48,10 +56,13 @@
             </p>
         </section>
     
-        <section class="section3">
+        <section id="section3" class="section3">
             <h2>
                 Hur stor andel är på grund av transport generellt?
             </h2>
+            <div class="section1_svg">
+                <img src="./images/truck.svg" alt="">
+            </div>
             <div>
                 <canvas id="transportChart"></canvas>
             </div>
@@ -60,10 +71,13 @@
             </p>
         </section>
     
-        <section class="section4">
+        <section id="section4" class="section4">
             <h2>
                 Hur stor växtgasutsläpp är på grund av personbilar?
             </h2>
+            <div class="section1_svg">
+                <img src="./images/3.svg" alt="">
+            </div>
             <div>
                 <canvas id="carChart"></canvas>
             </div>
@@ -72,7 +86,7 @@
             </p>
         </section>
     
-        <section class="section5">
+        <section id="section5" class="section5">
             <h2>
                 Vad blir vår slutsats?
             </h2>
