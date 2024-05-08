@@ -10,8 +10,11 @@
 </head>
 <body>
     <header>
+        <div class="button_source">
+            <button onclick="location.href='../sources/sources.html';">Källor</button>
+        </div> 
         <div class="header_img">
-            <img src="/images/header_img.png" alt="">
+            <img src="../images/header_img.png" alt="">
         </div>
         <nav class="header_nav">
             <button onclick="location.href='#section1'">Miljöpåverkan av Bilar</button>
@@ -37,7 +40,7 @@
                 </p> 
             </div>
             <div class="section1_svg">
-                <img src="./images/bild2.svg" alt="">
+                <img src="../images/bild2.svg" alt="">
             </div>
         </section>
     
@@ -46,7 +49,7 @@
                 Har växthusgasutsläpp ökat eller minskat den senaste tiden?
             </h2>
             <div class="section1_svg">
-                <img src="./images/climate_change_split.svg" alt="">
+                <img src="../images/climate_change_split.svg" alt="">
             </div>
             <div>
                 <canvas id="totalChart"></canvas>
@@ -61,7 +64,7 @@
                 Hur stor andel är på grund av transport generellt?
             </h2>
             <div class="section1_svg">
-                <img src="./images/truck.svg" alt="">
+                <img src="../images/truck.svg" alt="">
             </div>
             <div>
                 <canvas id="transportChart"></canvas>
@@ -76,7 +79,7 @@
                 Hur stor växtgasutsläpp är på grund av personbilar?
             </h2>
             <div class="section1_svg">
-                <img src="./images/3.svg" alt="">
+                <img src="../images/3.svg" alt="">
             </div>
             <div>
                 <canvas id="carChart"></canvas>
@@ -114,14 +117,11 @@
                         <button class="footer_button2" type="button"> <strong>Nej</strong> </button>
                     </div>
                 </div>
-                <div class="footer_link">
-                    <a href="sources.html">Källor</a>
-                </div>
             </div>
         </section>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
+    <script src="../backend/script.js"></script>
 </body>
 </html>

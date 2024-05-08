@@ -21,6 +21,7 @@ h2 {
   margin-left: 200px;
 }
 
+
 h3 {
   display: block;
   font-size: 1.17em;
@@ -36,6 +37,7 @@ h3 {
   margin-left: 200px; 
 }
 
+
 p {
   font-size: 16px;
   font-family:Arial, Helvetica, sans-serif;
@@ -46,24 +48,30 @@ p {
   line-height: 130%;
 }
 
- img {
-  
+
+
+/* Header */
+
+
+.button_source {
+  display: flex;
+  justify-content: right;
 }
 
-.header_img{
-  width: auto;
-  height: ;
-}
-header {
-    font-family: 'Times New Roman', Times, serif;
-   /* background-color: rgb(67, 175, 247); */ 
+.button_source > button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(79,120,175);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 20px 20px 0 0;
+  cursor: pointer;
 }
 
-/* 
-.header_img{
-  
-}
-*/
 
 .header_nav {
   display: flex;
@@ -129,11 +137,6 @@ header {
 
 
 /* SEKTION 4 */
-
-
-
-
-
 
 
 
@@ -208,19 +211,5 @@ button:active {
   background-color:rgb(206, 54, 54);
 }
 
-.footer_link {
-  display: flex;
-  justify-content: end;
-  margin: 30px 0px 0px 0px;
-}
 
-.footer_link > a {
-  color:black;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
 
