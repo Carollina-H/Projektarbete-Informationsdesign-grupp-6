@@ -10,20 +10,21 @@
 </head>
 <body>
     <header>
-        <div class="button_source">
-            <button onclick="location.href='../sources/sources.html';">Källor</button>
-        </div> 
-        <div class="header_img">
-            <img src="../images/header_img.png" alt="">
+        <div>
+            <div class="button_source">
+                <button onclick="location.href='../sources/sources.html';">Källor</button>
+            </div> 
+            <div class="header_img">
+                <img src="../images/header_img.png" alt="">
+            </div>
+            <nav class="header_nav">
+                <button onclick="location.href='#section1'">Miljöpåverkan av Bilar</button>
+                <button onclick="location.href='#section2'">Utsläppstrender</button>
+                <button onclick="location.href='#section3'">Transportsektorns Andel</button>
+                <button onclick="location.href='#section4'">Personbilars Utsläpp</button>
+                <button onclick="location.href='#section5'">Slutsatser</button>
+            </nav>
         </div>
-        <nav class="header_nav">
-            <button onclick="location.href='#section1'">Miljöpåverkan av Bilar</button>
-            <button onclick="location.href='#section2'">Utsläppstrender</button>
-            <button onclick="location.href='#section3'">Transportsektorns Andel</button>
-            <button onclick="location.href='#section4'">Personbilars Utsläpp</button>
-            <button onclick="location.href='#section5'">Slutsatser</button>
-        </nav>
-
     </header>
     
     <main>
@@ -78,11 +79,11 @@
             <h2>
                 Hur stor växtgasutsläpp är på grund av personbilar?
             </h2>
-            <div class="section1_svg">
-                <img src="../images/3.svg" alt="">
-            </div>
             <div>
                 <canvas id="carChart"></canvas>
+            </div>
+            <div class="section1_svg">
+                <img src="../images/3.svg" alt="">
             </div>
             <p>
                 Vi kan se här att...
