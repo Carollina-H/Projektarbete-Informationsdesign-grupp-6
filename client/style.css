@@ -52,58 +52,65 @@ p {
 
 /* Header */
 
-
-
 .button_source {
   display: flex;
   justify-content: right;
+  padding: 10px 0px 18px 0px;
+  background-color: rgb(79,120,175);
 }
 
 .button_source > button {
   border: none;
   border-radius: 5px;
-  color: white;
-  background-color: rgb(79,120,175);
-  padding: 15px 32px;
+  color: black;
+  background-color: rgba(178,225,255,255);
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
   margin: 20px 20px 0 0;
   cursor: pointer;
+  border: solid black 3px;
 }
 
 .button_source > button:hover {
   background-color:rgb(0, 61, 143) ;
+  color: white;
+  border: solid white 3px;
 }
 
 .header_nav {
   display: flex;
   justify-content: center; 
   align-items: center; 
-  gap: 30px; 
-  padding: 10px 0; 
+  gap: 40px; 
+  padding: 50px 0; 
+  background-color: rgb(79,120,175);
 }
 
 .header_nav button {
-  background-color: rgb(79,120,175);
+  background-color: rgba(178,225,255,255);
   border: none;
   border-radius: 5px;
-  color:white;
-  padding: 15px 32px;
+  color:black;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
+  border: solid black 3px;
 }
 
 .header_nav button:hover {
+  color: white;
   background-color:rgb(0, 61, 143) ;
   transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
+  border: solid white 3px;
 }
 
 .header_nav button:active{
@@ -139,10 +146,42 @@ p {
 
 /* SEKTION 2 */
 
+
+
 /* SEKTION 3 */
 
 
 /* SEKTION 4 */
+
+
+
+
+/* SEKTION 5 */
+.section5_Symboles {
+  display: flex;
+  margin-left: 200px;
+  column-gap: 50px;
+  margin-bottom: 100px;
+}
+
+
+.section5_Symboles div {
+  width: 240px;
+}
+
+.section5_Symboles p {
+  margin: 0px;
+  margin-top: 15px;
+  text-align: center;
+  width: 240px;
+}
+
+
+/* SEKTION 6 */
+
+
+
+/* SEKTION 7 */
 
 
 
@@ -193,14 +232,14 @@ p {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-}
+  border: solid black 3px;
 
+}
 
 button:hover {
   transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
-
 }
 
 button:active {
@@ -215,6 +254,13 @@ button:active {
 
 .footer_button2:focus {
   background-color:rgb(206, 54, 54);
+}
+
+
+canvas{
+  height: 1000px;
+  width: 1000px;
+  margin-bottom: 200px;
 }
 
 
