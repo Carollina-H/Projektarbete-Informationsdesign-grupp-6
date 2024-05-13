@@ -18,7 +18,7 @@ h2 {
   font-weight: bold;
   unicode-bidi: isolate;
   font-family: 'Times New Roman', Times, serif;
-  margin-left: 200px;
+  margin-left: 0;
 }
 
 
@@ -142,11 +142,31 @@ p {
   margin-bottom: 50px;
 }
 
-
+.section1 h2 {
+  margin-left: 200px;
+}
 
 /* SEKTION 2 */
 
+.section2 {
+  display: flex;
+  column-gap: 150px;
+  margin: 200px 0px 100px 0px;
+  justify-content: center;
+}
 
+.section2_svg {
+  border: 2px;
+  width: 500px;
+  margin-right: 150px;
+  margin-top: 250px;
+  margin-bottom: 200px;
+}
+
+.section2 h2 {
+  justify-content: start;
+  margin-left: 60px;
+}
 
 /* SEKTION 3 */
 
@@ -258,9 +278,10 @@ button:active {
 
 
 canvas{
-  height: 1000px;
-  width: 1000px;
+  width: 1200px;
   margin-bottom: 200px;
+  margin-top: 80px;
+  margin-left: 10px;
 }
 
 
