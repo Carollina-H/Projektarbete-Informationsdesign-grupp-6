@@ -77,8 +77,8 @@ function dataProcessing(data) {
 
 // Funktion för att skapa linjediagram.
 function createLineChart(years, data) {
-    const ctx = document.getElementById('totalaUtsläppLineChart').getContext('2d'); // Hämtar canvas-elementet för diagrammet.
-    new Chart(ctx, {
+    const canvas = document.getElementById('totalaUtsläppLineChart'); // Hämtar canvas-elementet för diagrammet.
+    new Chart(canvas, {
         type: 'line', // Typ av diagram.
         data: {
             labels: years, // Åren blir x-axelns etiketter.
@@ -87,7 +87,6 @@ function createLineChart(years, data) {
                 data: data, // Data för diagrammet.
                 borderColor: 'rgb(75, 192, 192)', // Färg på linjen.
                 backgroundColor: 'rgba(75, 192, 192, 0.5)', // Färg på fyllningen under linjen.
-                fill: false // Bestämmer om området under linjen ska fyllas.
             }]
         },
 
@@ -98,8 +97,8 @@ function createLineChart(years, data) {
 
 // Funktion för att skapa bar-chart.
 function createHistogram(years, data) {
-    const ctx = document.getElementById('transportHistogram').getContext('2d'); // Hämtar canvas-elementet för diagrammet.
-    new Chart(ctx, {
+    const canvas = document.getElementById('transportHistogram'); // Hämtar canvas-elementet för diagrammet.
+    new Chart(canvas, {
         type: 'bar', // Typ av diagram.
         data: {
             labels: years, // Åren blir x-axelns etiketter.
@@ -115,8 +114,8 @@ function createHistogram(years, data) {
 
 // Funktion för att skapa bar-chart.
 function createCarChart(years, carData, totalData) {
-    const ctx = document.getElementById('personBilarChart').getContext('2d'); // Hämtar canvas-elementet för diagrammet.
-    new Chart(ctx, {
+    const canvas = document.getElementById('personBilarChart'); // Hämtar canvas-elementet för diagrammet.
+    new Chart(canvas, {
         type: 'bar', // Typ av diagram.
         data: {
             labels: years, // Åren blir x-axelns etiketter.
@@ -126,7 +125,7 @@ function createCarChart(years, carData, totalData) {
                 backgroundColor: 'rgba(54, 162, 235, 0.5)' // Färg på fyllningen under linjen.
 
             }, {
-                label: 'Bilars utsläpp', // Namn på dataserien.
+                label: 'Personbilars utsläpp', // Namn på dataserien.
                 data: carData, // Data för diagrammet.
                 backgroundColor: 'rgba(255, 99, 132, 0.5)' // Färg på fyllningen under linjen.
             }]
@@ -139,10 +138,6 @@ function createCarChart(years, carData, totalData) {
 function standardChartOptions(title) {
     return {
         responsive: true, // Gör diagrammet responsivt.
-        scales: {
-            y: { beginAtZero: true }, // Startar y-axeln från 0.
-            x: {} // Konfigurationer för x-axeln.
-        },
         plugins: {
             legend: { display: true, position: 'top' }, // Visar förklaring ovanför diagrammet.
             title: { display: true, text: title } // Visar en titel på diagrammet.
@@ -152,3 +147,4 @@ function standardChartOptions(title) {
 
 // När sidan laddas körs fetchData funktionen för att starta datanhämtningen.
 document.addEventListener('DOMContentLoaded', fetchData);
+

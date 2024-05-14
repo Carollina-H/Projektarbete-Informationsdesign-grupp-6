@@ -41,13 +41,18 @@ h3 {
 p {
   font-size: 16px;
   font-family:Arial, Helvetica, sans-serif;
-  width: 500px;
+  width: 800px;
   margin-left: 200px;
-  margin-top: -12px;
   margin-bottom: 50px;
   line-height: 130%;
 }
 
+canvas{
+  width: 800px;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  margin-left: 50px;
+}
 
 
 /* Header */
@@ -130,7 +135,7 @@ p {
 .section1 {
   display: flex;
   column-gap: 250px;
-  margin: 200px 0px 100px 0px;
+  margin: 200px 0px 50px 0px;
   justify-content: center;
 }
 
@@ -146,12 +151,20 @@ p {
   margin-left: 200px;
 }
 
+.section1 p {
+  width: 500px;
+}
+
+.road_img {
+  max-width: 100%;
+}
+
+
 /* SEKTION 2 */
 
 .section2 {
   display: flex;
   column-gap: 150px;
-  margin: 200px 0px 100px 0px;
   justify-content: center;
 }
 
@@ -164,32 +177,108 @@ p {
 }
 
 .section2 h2 {
-  justify-content: start;
+  margin-left: 60px;
+}
+
+.section2 p {
+  margin-top: 10px;
   margin-left: 60px;
 }
 
 /* SEKTION 3 */
 
+.section3 {
+  display: flex;
+  column-gap: 150px;
+  margin: -50px 0px 0px 0px;
+  justify-content: center;
+}
+
+.section3_svg {
+  border: 2px;
+  width: 500px;
+  margin-right: 150px;
+  margin-top: 250px;
+  margin-bottom: 200px;
+}
+
+.section3 h2 {
+  margin-left: 60px;
+}
+
+.section3 p {
+  margin-top: 10px;
+  margin-left: 60px;
+}
 
 /* SEKTION 4 */
 
+.section4 {
+  display: flex;
+  column-gap: 150px;
+  margin: 50px 0px 0px 0px;
+  justify-content: center;
+}
 
+.section4_svg {
+  width: 500px;
+  margin-right: 150px;
+  margin-top: 400px;
+  margin-bottom: 200px;
+}
 
+.section4 h2 {
+  margin-left: 60px;
+}
+
+.section4 p {
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+ul {
+  margin-top: -30px;
+}
+
+li {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
+  width: 800px;
+}
 
 /* SEKTION 5 */
-.section5_Symboles {
+.section5 {
+  margin: 50px 0px 100px 0px;
+  justify-content: center;
+}
+
+.section5 h2 {
+  margin-left: 100px;
+}
+
+.section5 p {
+  margin-top: 10px;
+  margin-left: 100px;
+  width: 800PX;
+}
+
+/* SEKTION 6 */
+
+.section6_Symbols {
   display: flex;
-  margin-left: 200px;
+  margin-left: 50px;
   column-gap: 50px;
   margin-bottom: 100px;
 }
 
 
-.section5_Symboles div {
+.section6_Symbols div {
   width: 240px;
 }
 
-.section5_Symboles p {
+.section6_Symbols p {
   margin: 0px;
   margin-top: 15px;
   text-align: center;
@@ -197,12 +286,25 @@ p {
 }
 
 
-/* SEKTION 6 */
-
-
 
 /* SEKTION 7 */
 
+.section7 {
+  margin: 300px 0px 300px 0px;
+  justify-content: center;
+}
+
+.section7 h2 {
+  margin-left: 200px;
+}
+
+.section7  p {
+  margin-top: 10px;
+  margin-left: 200px;
+  width: 600PX;
+}
+
+/* SEKTION 7 */
 
 
 
@@ -277,12 +379,9 @@ button:active {
 }
 
 
-canvas{
-  width: 1200px;
-  margin-bottom: 200px;
-  margin-top: 80px;
-  margin-left: 10px;
+.footer h2 {
+  justify-content: start;
+  margin-left: 200px;
 }
-
 
 

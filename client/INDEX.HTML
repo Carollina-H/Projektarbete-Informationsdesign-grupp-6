@@ -36,80 +36,119 @@
                 
                 <p>
                     Vi har valt att jämföra personbilars växthusgasutsläpp med det totala utsläppet i Umeå kommun.
-                    Syftet är att ta reda på hur stor andel ligger på just personbilar och sedan informera människor
-                    om denna information.
+                    Genom att jämföra utsläppen från personbilar med kommunens totala utsläpp vill vi belysa vilken specifik roll biltrafiken spelar för stadens miljöpåverkan. Målet är att öka medvetenheten om hur stor andel av de totala växthusgasutsläppen som faktiskt kan attribueras till personbilar, och på så vis informera invånarna i Umeå om vikten av att överväga miljövänligare transportalternativ.
                 </p> 
             </div>
             <div class="section1_svg">
                 <img src="../images/exclamation.svg" alt="">
             </div>
         </section>
+
+        <div class="road_img">
+            <img src="../images/road.svg" alt="">
+        </div>
     
         <section id="section2" class="section2">
             <div class="">
                 <h2>
                     Har växthusgasutsläpp ökat eller minskat den senaste tiden?
                 </h2>
-                
+                <p>
+                    Diagrammet nedan visar de totala växthusgasutsläppen i Umeå från år 2018 till 2022, mätt i ton koldioxidekvivalenter (Ton CO2e). Under denna period ser vi en övergripande minskning av utsläppen. År 2018 startade mätningarna på 391 423 ton CO2e. Året efter, 2019, hade utsläppen minskat till 364 126 ton CO2e. Denna minskning fortsatte under 2020 då utsläppen sjönk ytterligare till 330 583 ton CO2e. År 2021 såg vi en liten ökning till 340 624 ton CO2e, men trenden vände nedåt igen 2022 med utsläpp på 318 702 ton CO2e. Denna nedåtgående trend i utsläppen under de fem åren visar på effektiviteten i de åtgärder och strategier som implementerats i Umeå för att hantera och minska växthusgasutsläppen.
+                </p>
                 <div>
                     <canvas id="totalaUtsläppLineChart"></canvas>
                 </div>
+ 
             </div>
             <div class="section2_svg">
                 <img src="../images/climate_change_split.svg" alt="">
             </div>
-            <!-- <h2>
-                Har växthusgasutsläpp ökat eller minskat den senaste tiden?
-            </h2>
-            <div class="section1_svg">
-                <img src="../images/climate_change_split.svg" alt="">
-            </div>
-            <div>
-                <canvas id="totalaUtsläppLineChart"></canvas>
-            </div>
-            <p>
-                Vi kan se här att...
-            </p> -->
+
+           
         </section>
+        
+        <div class="road_img">
+            <img src="../images/road.svg" alt="">
+        </div>
     
         <section id="section3" class="section3">
-            <h2>
-                Hur stor andel är på grund av transport generellt?
-            </h2>
-            <div class="section1_svg">
+
+            <div class="">
+                <h2>
+                    Hur stor andel är på grund av transport generellt?
+                </h2>
+                <p>
+                    Diagrammet nedan visar andelen utsläpp från transport av det totala utsläppet i Umeå under samma tidsspann (2018-2022). Andelen är mätt i procent (%). Den övergripande trenden är att det har minskat under denna period. År 2018 bestod transportutsläpp av 43,8% av det totala utsläppet i Umeå. År 2019 hade andelet ökat till 45,4%, alltså med 1,6 procentenheter. Efter 2019 hade andelen jämt minskat: 45,6% år 2020, 42,5% år 2021 och 41,6% år 2022. Vi kan se att rent procentuellt har trenden inte påverkats av det totala utsläppets kurvatur.
+                </p> 
+                <div>
+                    <canvas id="transportHistogram"></canvas>
+                </div>
+
+            </div>
+            <div class="section3_svg">
                 <img src="../images/truck.svg" alt="">
             </div>
-            <div>
-                <canvas id="transportHistogram"></canvas>
-            </div>
-            <p>
-                Vi kan se här att...
-            </p>
-        </section>
     
+        </section>
+
+        <div class="road_img">
+            <img src="../images/road.svg" alt="">
+        </div>
+
+
         <section id="section4" class="section4">
-            <h2>
-                Hur stor växtgasutsläpp är på grund av personbilar?
-            </h2>
-            <div>
-                <canvas id="personBilarChart"></canvas>
+
+            <div class="">
+                <h2>
+                    Hur stor växtgasutsläpp är på grund av personbilar?
+                </h2>
+                <p>
+                    Diagrammet nedan visar en jämförelse mellan de totala växthusgasutsläppen och utsläppen specifikt från personbilar i Umeå för åren 2018 till 2022. Det visar tydligt att medan de totala utsläppen gradvis minskar över de observerade åren, följer utsläppen från personbilar en liknande nedåtgående trend. Däremot är personbilarnas trend mindre kraftig än det totala.
+                    <br><br>
+                    <strong>Utsläpp och bilars utsläpp över åren:</strong> 
+                    <ul>
+                    <li><strong>2018:</strong> De totala utsläppen var 391 423 ton CO2e, varav personbilarnas bidrag var 97 144 ton CO2e, vilket utgör cirka 25% av de totala utsläppen.</li>
+
+                    <li><strong>2019:</strong> Totalutsläppen minskade till 364 126 ton CO2e, med personbilars utsläpp på 94 733 ton CO2e, vilket också speglar en lätt minskning men behåller en liknande andel av de totala utsläppen.</li> 
+                    
+                    <li><strong>2020:</strong> Ett ytterligare fall i de totala utsläppen noterades till 330 583 ton CO2e, med bilars utsläpp minskande till 86 610 ton CO2e. Andelen bilutsläpp i relation till totalen fortsätter vara betydande trots minskningen.</li>
+
+                    <li><strong>2021:</strong> En liten ökning i totala utsläpp till 340 624 ton CO2e observerades, medan bilars utsläpp fortsatte att minska till 85 889 ton CO2e. Detta indikerar att andra källor än biltrafik kan ha bidragit till den tillfälliga ökningen av de totala utsläppen detta år.</li>
+
+                    <li><strong>2022:</strong> Totala utsläpp sjönk åter till 318 702 ton CO2e och bilars utsläpp föll till 76 770 ton CO2e. Detta år visar den största relativa minskningen av bilars utsläpp under perioden, vilket betonar fortsatta framsteg i att minska beroendet av och utsläppen från personbilar. </li>
+                    </ul>
+                </p> 
+                <div>
+                    <canvas id="personBilarChart"></canvas>
+                </div>
+
             </div>
-            <div class="section1_svg">
+            <div class="section4_svg">
                 <img src="../images/car.svg" alt="">
             </div>
-            <p>
-                Vi kan se här att...
-            </p>
+    
         </section>
     
-        <section id="section5" class="section5">
+        <div class="road_img">
+            <img src="../images/road.svg" alt="">
+        </div>
+
+        
+        <section  id="section5" class="section5">
             <h2>
                 Finns det några alternativ jag kan använda för att minska utsläppen?
             </h2>
             <p>
-
+                Det finns många alternativ till att själv bidra för att hjälpa miljön. Då vi har sett att personbilars utsläpp är ungefär en fjärdedel av utsläppen år 2022 i Umeå så vore det en bra plats att börja minska sitt utsläpp. Fastän vi bara har använt oss av en kommun i Sverige så betyder det inte att det är orelevant för oss som inte bor där, tvärtom så belyser denna data hur en vanlig kommuns konsumption kan se ut. Självklart tar vi hänsyn till att det kan vara nödvändigt med bilresor av flera anledningar men genom att vara medveten så kan man överväga andra alternativ vid tillfällen då bilen är mindre av ett behov utan mer av en bekvämlighet. Här är några alternativ du kan vända dig till som privatperson, vare sig som ett komplement till bilen eller att byta fullständigt till.
             </p>
-            <div class="section5_Symboles">
+        </section>
+
+
+        
+        <section id="section6" class="section6">
+
+            <div class="section6_Symbols">
                 <div>
                     <img src="../images/TrainAmico.svg" alt="Tåg">
                     <p><b>Tåg</b><br>Använda tåg</p>
@@ -117,29 +156,30 @@
 
                 <div>
                     <img src="../images/ElectricCar.svg" alt="Elbil">
-                    <p><b>Elbilar</b><br>Använda Elbilar </p>
+                    <p><b>Elbilar</b><br>Använda elbilar </p>
                 </div>
 
                 <div>
-                    <img src="../images/CityDriver.svg" alt="Storbil">
-                    <p><b>bil</b><br>Resa kort resor med bil <br>och hitta den kortaste vägen till mållen</p>
+                    <img src="../images/CarDriving.svg" alt="Stor bil">
+                    <p><b>Samåkning</b><br>Resa tillsammans med bil <br>och hitta det kortaste vägen till målet</p>
                 </div>
 
                 <div>
                     <img src="../images/RideBicycle.svg" alt="Cyckel">
-                    <p><b>Cyckel</b><br>Använda Cyckel<br>
+                    <p><b>Cykel</b><br>Använda cykel<br>
                         istället för bil
                     </p>
                 </div>
             </div>
 
         </section>
-        <section id="section6" class="section6">
+        
+        <section id="section7" class="section7">
             <h2>
                 Vad blir vår slutsats?
             </h2>
             <p>
-
+                Vi har sett att mängden CO2e-utsläpp har minskat i Umeå kommun. Detta kan vi se med hjälp av våra grafer av det totala utsläppet men även transportsektorns och personbilars utsläpp. Det totala utsläppet hade ökat år 2021 med 10 041 ton CO2e medan transportsektorns utsläpp hade ökat år 2019 med 1,6 procentenheter. Eftersom vår frågeställning var att ta reda på hur mycket just personbilar påverkar miljön i Umeå i jämförelse med den totala siffran så har vi därför jämfört den datan med det totala. Vi kan därför dra slutsatsen att det har blivit bättre även där men att det inte minskade lika mycket som det totala utsläppet. Alternativ till att åka personbil är att ta tåg, använda elbil, samåka eller att ta cykel.
             </p>
         </section>
     
