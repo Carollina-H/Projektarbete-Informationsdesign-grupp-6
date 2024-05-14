@@ -56,12 +56,22 @@ canvas{
 
 
 /* Header */
+.header_div{
+ background-color:rgb(79,120,175) ;
+ height: 600px;
+}
 
+.header_h1 {
+  padding: 200px 0px 0px 0px ;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
 .button_source {
   display: flex;
   justify-content: right;
   padding: 10px 0px 18px 0px;
-  background-color: rgb(79,120,175);
+
 }
 
 .button_source > button {
@@ -91,7 +101,6 @@ canvas{
   align-items: center; 
   gap: 40px; 
   padding: 50px 0; 
-  background-color: rgb(79,120,175);
 }
 
 .header_nav button {
