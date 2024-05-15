@@ -11,6 +11,7 @@
 <body>
     <header>
         <div class="header_div">
+            <button onclick="topFunction()" class="sticky-btn" id="myBtn" title="Till toppen">↑</button>
             <div class="button_source">
                 <button onclick="location.href='../sources/sources.html';">
                     Om sidan
@@ -60,17 +61,24 @@
                     Har växthusgasutsläpp ökat eller minskat den senaste tiden?
                 </h2>
                 <p>
-                    Diagrammet nedan visar de totala växthusgasutsläppen i Umeå från år 2018 till 2022, mätt i ton koldioxidekvivalenter (Ton CO2e). Under denna period ser vi en övergripande minskning av utsläppen. År 2018 startade mätningarna på 391 423 ton CO2e. Året efter, 2019, hade utsläppen minskat till 364 126 ton CO2e. Denna minskning fortsatte under 2020 då utsläppen sjönk ytterligare till 330 583 ton CO2e. År 2021 såg vi en liten ökning till 340 624 ton CO2e, men trenden vände nedåt igen 2022 med utsläpp på 318 702 ton CO2e. Denna nedåtgående trend i utsläppen under de fem åren visar på effektiviteten i de åtgärder och strategier som implementerats i Umeå för att hantera och minska växthusgasutsläppen.
+                    Diagrammet nedan visar de totala växthusgasutsläppen i Umeå från år 2018 till 2022, 
+                    mätt i ton koldioxidekvivalenter (Ton CO2e). Under denna period ser vi en övergripande 
+                    minskning av utsläppen. Från 2018 till 2019 hade utsläppen minskat med 27 297 ton CO2e, 
+                    något som sjönk ytterligare och ännu mer drastiskt år 2020 med 33 543 ton CO2e. Detta 
+                    kan vara på grund av pandemin som pågick då värdet ökade igen år 2021 med 10 041 ton CO2e. 
+                    Som tur var så vände trenden nedåt igen 2022 med 21 922 ton CO2e, vilket är även lägre än 2020 med 
+                    11 881 ton CO2e. Denna nedåtgående trend i utsläppen under de fem åren visar på effektiviteten i de 
+                    åtgärder och strategier som implementerats i Umeå för att hantera och minska växthusgasutsläppen.
                 </p>
                 <div>
                     <canvas id="totalaUtsläppLineChart"></canvas>
                 </div>
  
             </div>
-            <div class="section2_svg">
+<!--             <div class="section2_svg">
                 <img src="../images/climate_change_split.svg" alt="">
             </div>
-
+ -->
            
         </section>
         
@@ -85,16 +93,22 @@
                     Hur stor andel är på grund av transport generellt?
                 </h2>
                 <p>
-                    Diagrammet nedan visar andelen utsläpp från transport av det totala utsläppet i Umeå under samma tidsspann (2018-2022). Andelen är mätt i procent (%). Den övergripande trenden är att det har minskat under denna period. År 2018 bestod transportutsläpp av 43,8% av det totala utsläppet i Umeå. År 2019 hade andelet ökat till 45,4%, alltså med 1,6 procentenheter. Efter 2019 hade andelen jämt minskat: 45,6% år 2020, 42,5% år 2021 och 41,6% år 2022. Vi kan se att rent procentuellt har trenden inte påverkats av det totala utsläppets kurvatur.
+                    Diagrammet nedan visar andelen utsläpp från transport av det totala utsläppet i Umeå 
+                    under samma tidsspann (2018-2022). Andelen är mätt i procent (%). Den övergripande 
+                    trenden är att det har minskat under denna period. Däremot kan vi se hur andelen har 
+                    ökat år 2019 med 1,6 procentenheter. Efter 2019 hade andelen jämt minskat: med 1,8 
+                    procentenheter år 2020, 1,1 procentenheter år 2021 och 0,9 procentenheter år 2022. 
+                    Fastän att andelen har minskat ser vi att för varje år minskar det mindre än det förra. 
+                    Rent procentuellt har trenden inte följt med det totala utsläppets kurvatur.
                 </p> 
                 <div>
                     <canvas id="transportHistogram"></canvas>
                 </div>
 
             </div>
-            <div class="section3_svg">
+<!--             <div class="section3_svg">
                 <img src="../images/truck.svg" alt="">
-            </div>
+            </div> -->
     
         </section>
 
@@ -130,9 +144,9 @@
                 </div>
 
             </div>
-            <div class="section4_svg">
+<!--             <div class="section4_svg">
                 <img src="../images/car.svg" alt="">
-            </div>
+            </div> -->
     
         </section>
     

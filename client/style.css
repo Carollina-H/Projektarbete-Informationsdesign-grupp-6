@@ -73,6 +73,28 @@ canvas{
   padding: 10px 0px 18px 0px;
 }
 
+.header_nav button {
+  background-color: #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  width: 60px;
+}
+
 .button_source > button {
   border: none;
   border-radius: 5px;
@@ -85,7 +107,7 @@ canvas{
   font-size: 20px;
   margin: 20px 20px 0 0;
   cursor: pointer;
-  border: solid black 3px;
+  border: solid rgb(179, 178, 178) 3px;
 }
 
 .button_source > button:hover {
@@ -103,7 +125,7 @@ canvas{
 }
 
 .header_nav button {
-  background-color: rgba(178,225,255,255);
+  background-color: ;
   border: none;
   border-radius: 5px;
   color:black;
@@ -114,7 +136,7 @@ canvas{
   font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
-  border: solid black 3px;
+  border: solid rgb(179, 178, 178) 3px;
 }
 
 .header_nav button:hover {
@@ -169,18 +191,18 @@ canvas{
 
 /* SEKTION 2 */
 
-.section2 {
+/* .section2 {
   display: flex;
   column-gap: 150px;
   justify-content: center;
 }
-
-.section2_svg {
+ */
+/* .section2_svg {
   width: 500px;
   margin-right: 150px;
   margin-top: 250px;
   margin-bottom: 200px;
-}
+} */
 
 .section2 h2 {
   margin-left: 60px;
@@ -193,7 +215,7 @@ canvas{
 
 /* SEKTION 3 */
 
-.section3 {
+/* .section3 {
   display: flex;
   column-gap: 150px;
   margin: -50px 0px 0px 0px;
@@ -205,7 +227,7 @@ canvas{
   margin-right: 150px;
   margin-top: 250px;
   margin-bottom: 200px;
-}
+} */
 
 .section3 h2 {
   margin-left: 60px;
@@ -217,7 +239,7 @@ canvas{
 }
 
 /* SEKTION 4 */
-
+/* 
 .section4 {
   display: flex;
   column-gap: 150px;
@@ -231,7 +253,7 @@ canvas{
   margin-top: 400px;
   margin-bottom: 200px;
 }
-
+ */
 .section4 h2 {
   margin-left: 60px;
 }

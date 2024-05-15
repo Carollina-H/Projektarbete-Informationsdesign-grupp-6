@@ -148,3 +148,22 @@ function standardChartOptions(title) {
 // När sidan laddas körs fetchData funktionen för att starta datanhämtningen.
 document.addEventListener('DOMContentLoaded', fetchData);
 
+
+// Skapa function för när användaren rör sig nedåt 20px från toppen av dokumentet, visa knappen
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// skapa en funtion för när användaren klickar på knappen, scrolla till toppen av dokumentet
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
