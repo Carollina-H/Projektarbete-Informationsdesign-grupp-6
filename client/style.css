@@ -99,7 +99,7 @@ canvas{
   border: none;
   border-radius: 5px;
   color: black;
-  background-color: rgba(178,225,255,255);
+  background-color: #ccc;
   padding: 15px 30px;
   text-align: center;
   text-decoration: none;
@@ -170,8 +170,8 @@ canvas{
 }
 
 .section1_svg {
-  height: 50px;
-  width: 20px;
+  height: 5px;
+  width: 2px;
   margin-top: 30px;
   margin-bottom: 50px;
 }
@@ -263,7 +263,7 @@ canvas{
   margin-left: 60px;
 }
 
-ul {
+/* ul {
   margin-top: -30px;
 }
 
@@ -273,7 +273,7 @@ li {
   font-size: 16px;
   font-family:Arial, Helvetica, sans-serif;
   width: 800px;
-}
+} */
 
 /* SEKTION 5 */
 .section5 {
@@ -292,18 +292,29 @@ li {
 }
 
 /* SEKTION 6 */
+.section6{
+  padding: 50px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .section6_Symbols {
   display: flex;
-  margin-left: 50px;
-  column-gap: 50px;
-  margin-bottom: 100px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color:;
+}
+
+.symbol {
+  
+  padding: 20px;
+  text-align: center;
+  width: 300px;
 }
 
 
-.section6_Symbols div {
-  width: 240px;
-}
 
 .section6_Symbols p {
   margin: 0px;
@@ -312,7 +323,37 @@ li {
   width: 240px;
 }
 
+.section6_Symbols ul {
+  text-align: left;
+  width: 240px;
+}
 
+.symbol img{
+  width: 100px;
+  height: auto;
+  margin: 10px 0;
+
+}
+
+.details {
+  text-align: left;
+}
+
+.details h4 {
+  margin-bottom: 5px;
+  font-size: 1em;
+  color: #333;
+}
+
+
+.details ul {
+  margin-bottom: 5px;
+}
+
+.details ul li {
+  list-style-type: none;
+  padding-left: 15px;
+}
 
 /* SEKTION 7 */
 
