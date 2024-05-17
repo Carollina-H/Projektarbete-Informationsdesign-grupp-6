@@ -15,41 +15,113 @@
             <div class="button_source">
                 <button onclick="location.href='../sources/sources.html';">
                     Om sidan
-
                 </button>
             </div> 
             <div class="header_h1">
-                <h1>
-                    Utsläpp av växthusgas i Umeå
-                </h1>
+                <img src="../images/header_emissions.svg" alt="">
             </div>
+            
+                <nav class="header_nav">
+                    <button onclick="location.href='#section2'">Utsläppstrend</button>
+                    <button onclick="location.href='#section3'">Transportens utsläpp</button>
+                    <button onclick="location.href='#section4'">Personbilars utsläpp</button>
+                    <button onclick="location.href='#section5'">Minska usläppen</button>
+                    <button onclick="location.href='#section7'">Slutsats</button>
+                </nav>
 
-            <nav class="header_nav">
-                <button onclick="location.href='#section2'">Utsläppstrend</button>
-                <button onclick="location.href='#section3'">Transportens utsläpp</button>
-                <button onclick="location.href='#section4'">Personbilars utsläpp</button>
-                <button onclick="location.href='#section5'">Minska usläppen</button>
-                <button onclick="location.href='#section7'">Slutsats</button>
-            </nav>
+
         </div>
     </header>
     
     <main>
+
         <section id="section1" class="section1">
-            <div class="">
-                <h2>
+            <div class="section1_title">
+                <h1>
                     Hur mycket påverkas miljön av bilar i Umeå ?
-                </h2>
-                
+                </h1>
+            </div>  
+            <div class="section1_hr"><hr></div>
+            <div class="section1__p">   
                 <p>
                     Vi har valt att jämföra personbilars växthusgasutsläpp med det totala utsläppet i Umeå kommun.
                     Genom att jämföra utsläppen från personbilar med kommunens totala utsläpp vill vi belysa vilken specifik roll biltrafiken spelar för stadens miljöpåverkan. Målet är att öka medvetenheten om hur stor andel av de totala växthusgasutsläppen som faktiskt kan attribueras till personbilar, och på så vis informera invånarna i Umeå om vikten av att överväga miljövänligare transportalternativ.
                 </p> 
-            </div>
-            <div class="section1_svg">
-                <img src="../images/exclamation.svg" alt="">
+          </div> 
+        </section>
+
+
+        <div class="road_img">
+            <img src="../images/road.svg" alt="">
+        </div>
+
+
+
+
+        <section id="sction2_ny" class="sction2_ny">
+            <div class="">
+                <h2>
+                    Har växthusgasutsläpp ökat eller minskat den senaste tiden?
+                </h2>
+                <p>
+
+                </p>
+                <div>
+                    <canvas id="totalaUtsläppLineChart"></canvas>
+                </div>
+ 
             </div>
         </section>
+
+
+
+
+        <div class="road_img">
+            <img src="../images/road.svg" alt="">
+        </div>
+
+
+
+
+        <section id="sction3_ny" class="sction3_ny">
+
+        </section>
+
+
+        <div class="road_img">
+            <img src="../images/road.svg" alt="">
+        </div>
+
+
+
+
+        <section id="sction4_ny" class="sction4_ny">
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div class="road_img">
             <img src="../images/road.svg" alt="">
@@ -68,10 +140,6 @@
                 </div>
  
             </div>
-<!--             <div class="section2_svg">
-                <img src="../images/climate_change_split.svg" alt="">
-            </div>
- -->
            
         </section>
         
@@ -99,9 +167,6 @@
                 </div>
 
             </div>
-<!--             <div class="section3_svg">
-                <img src="../images/truck.svg" alt="">
-            </div> -->
     
         </section>
 
@@ -128,10 +193,7 @@
                 </div>
 
             </div>
-<!--             <div class="section4_svg">
-                <img src="../images/car.svg" alt="">
-            </div> -->
-    
+
         </section>
     
         <div class="road_img">
@@ -293,8 +355,7 @@
     
     </main>
    
-    <footer>
-        <section class="footer">
+    <footer class="footer">
             <div class="footer_container">
                 <h2 class="footer_h2">
                     Kommer du att bidra till att minska utsläppen?
@@ -311,7 +372,6 @@
                     </div>
                 </div>
             </div>
-        </section>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
