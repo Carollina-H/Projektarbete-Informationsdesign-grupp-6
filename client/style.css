@@ -147,7 +147,7 @@ canvas{
 
 .header_nav button:hover {
   color: white;
-  background-color:#3d4c31  ;
+  background-color:rgb(61, 76, 49)  ;
   transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
@@ -190,13 +190,12 @@ canvas{
   margin: 10px;
 }
 
-
 hr {
   width: 200px;
   height: 3px;
   border: none;
   background-color: #FFBFBF;
-  margin: 15px ;
+  margin: 15px;
 }
 
 .section1 p {
@@ -212,12 +211,59 @@ hr {
 
 /* SEKTION 2 */
 
-/* .section2 {
-  display: flex;
-  column-gap: 150px;
-  justify-content: center;
+.section2 {
+  margin: 200px 100px 50px 100px;
 }
- */
+
+.section2 div:nth-child(2){
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+.section2_text{
+  text-align: center;
+  margin-top: 80px;
+  
+ 
+}
+
+.section2__chart{
+  width: 1000px;
+  height: 600px;
+  justify-content: right;
+}
+
+.section2 p {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.text_emphasis {
+  font-size: 40px;
+}
+
+/* .section2 div:nth-child(1) {
+  justify-content: center;
+  margin: 0px 0px 0px 100px;
+  flex-basis: 100%;
+}
+
+.section2_title h2 {
+  height: 1.5rem;
+}
+
+.section2 div:nth-child(2) {
+  flex-basis: 40%;
+  width: 200px;
+}
+
+.section2 div:last-child {
+  height: 400px;
+  flex-basis: 40%;
+} */
+
 /* .section2_svg {
   width: 500px;
   margin-right: 150px;
@@ -225,14 +271,14 @@ hr {
   margin-bottom: 200px;
 } */
 
-.section2 h2 {
+/* .section2 h2 {
   margin-left: 60px;
 }
 
 .section2 p {
   margin-top: 10px;
   margin-left: 60px;
-}
+} */
 
 /* SEKTION 3 */
 
