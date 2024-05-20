@@ -85,8 +85,8 @@ function createLineChart(years, data) {
             datasets: [{
                 label: 'Totala utsläpp (Ton CO2e)', // Namn på dataserien.
                 data: data, // Data för diagrammet.
-                borderColor: 'rgb(75, 192, 192)', // Färg på linjen.
-                backgroundColor: 'rgba(75, 192, 192, 0.5)', // Färg på fyllningen under linjen.
+                borderColor: 'rgba(61, 76, 49, 0.5)', // Färg på linjen.
+                backgroundColor: 'rgba(61, 76, 49, 1)' // Färg på fyllningen under linjen.
             }]
         },
 
