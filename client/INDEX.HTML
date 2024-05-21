@@ -26,15 +26,11 @@
                     <button onclick="location.href='#section3'">Transportens utsläpp</button>
                     <button onclick="location.href='#section4'">Personbilars utsläpp</button>
                     <button onclick="location.href='#section5'">Minska usläppen</button>
-                    <button onclick="location.href='#section7'">Slutsats</button>
                 </nav>
-
-
         </div>
     </header>
     
     <main>
-
         <section id="section1" class="section1">
             <div class="section1_title">
                 <h1>
@@ -57,10 +53,13 @@
         <section id="section2" class="section2">
             <div class="section2_title">
                 <h1>
-                    Har växthusgasutsläpp ökat eller minskat den senaste tiden?
+                    Totala utsläpp i Umeå (2018-2022)
                 </h1>
             </div>
             <div>
+                <div class="section2__chart">
+                    <canvas id="totalaUtsläppLineChart"></canvas>
+                </div>
                 <div class="section2_text">
                     <p>Generell trend</p>
                     <p class="text_emphasis" >minskat</p>
@@ -71,11 +70,6 @@
                     <p>Avvikare</p>
                     <p class="text_emphasis" >2021</p>
                 </div>
-                    
-                <div class="section2__chart">
-                    <canvas id="totalaUtsläppLineChart"></canvas>
-                </div>
-     
             </div>
         </section>
 
@@ -86,7 +80,7 @@
         <section id="section3" class="section3">
             <div class="section3_title">
                 <h1>
-                    Hur stor andel är på grund av transport generellt?
+                    Andel av utsläpp från transportsektorn i Umeå (2018-2022)
                 </h1>
             </div>
             <div>
@@ -113,9 +107,13 @@
         <section id="section4" class="section4">
             <div class="section4_title">
                 <h1>
-                    Hur stor växtgasutsläpp är på grund av personbilar?                </h1>
+                    Jämförelse av bilars utsläpp och totala utsläpp i Umeå (2018-2022)
+                </h1>
             </div>
             <div>
+                <div class="section4__chart">
+                    <canvas id="personBilarChart"></canvas>
+                </div>
                 <div class="section4_text">
                     <p>Generell trend</p>
                     <p class="text_emphasis" >minskat</p>
@@ -126,239 +124,122 @@
                     <p>Avvikare</p>
                     <p class="text_emphasis" >2021</p>
                 </div>
-                    
-                <div class="section4__chart">
-                    <canvas id="personBilarChart"></canvas>
-                </div>
             </div>
         </section>
-<!-- 
 
-
-        
-
-
-
-
-        <section id="sction4_ny" class="sction4_ny">
-
-        </section>
-
-        <div class="road_img">
-            <img src="../images/road.svg" alt="">
-        </div> -->
-    
-<!--         <section id="section2" class="section2">
-            <div class="">
-                <h2>
-                    Har växthusgasutsläpp ökat eller minskat den senaste tiden?
-                </h2>
-                <p>
-                    Diagrammet nedan visar de totala växthusgasutsläppen i Umeå från år 2018 till 2022, mätt i ton koldioxidekvivalenter (Ton CO2e). Under denna period ser vi en övergripande minskning av utsläppen. Från 2018 till 2019 hade utsläppen minskat med ungfär 7% ton CO2e, något som sjönk ytterligare och ännu mer drastiskt år 2020 med 8,5% ton CO2e ifrån det total utskäppen 2018. Detta kan vara på grund av pandemin som pågick då värdet ökade igen år 2021 med 3% ton CO2e ifrån det utskäppen 2020. Som tur var så vände trenden nedåt igen 2022 med ungfär 6,4% ton CO2e, vilket är även lägre än 2020 med ungfär 3,6% ton CO2e. Denna nedåtgående trend i utsläppen under de fem åren visar på effektiviteten i de åtgärder och strategier som implementerats i Umeå för att hantera och minska växthusgasutsläppen.
-                </p>
-                <div>
-                    <canvas id="totalaUtsläppLineChart"></canvas>
-                </div>
- 
-            </div>
-           
-        </section> 
-        
-        <div class="road_img">
-            <img src="../images/road.svg" alt="">
-        </div>
-   
-        <section id="section3" class="section3">
-
-            <div class="">
-                <h2>
-                    Hur stor andel är på grund av transport generellt?
-                </h2>
-                <p>
-                    Diagrammet nedan visar andelen utsläpp från transport av det totala utsläppet i Umeå 
-                    under samma tidsspann (2018-2022). Andelen är mätt i procent (%). Den övergripande 
-                    trenden är att det har minskat under denna period. Däremot kan vi se hur andelen har 
-                    ökat år 2019 med 1,6 procentenheter. Efter 2019 hade andelen jämt minskat: med 1,8 
-                    procentenheter år 2020, 1,1 procentenheter år 2021 och 0,9 procentenheter år 2022. 
-                    Fastän att andelen har minskat ser vi att för varje år minskar det mindre än det förra. 
-                    Rent procentuellt har trenden inte följt med det totala utsläppets kurvatur.
-                </p> 
-                <div>
-                    <canvas id="transportHistogram"></canvas>
-                </div>
-
-            </div>
-    
-        </section>
 
         <div class="road_img">
             <img src="../images/road.svg" alt="">
         </div>
-
-
-        <section id="section4" class="section4">
-
-            <div class="">
-                <h2>
-                    Hur stor växtgasutsläpp är på grund av personbilar?
-                </h2>
-                <p>
-                    Diagrammet nedan visar en jämförelse mellan de totala växthusgasutsläppen och utsläppen 
-                    specifikt från personbilar i Umeå för åren 2018 till 2022. Det visar tydligt att medan 
-                    de totala utsläppen gradvis minskar över de observerade åren, följer utsläppen från 
-                    personbilar en liknande nedåtgående trend. Däremot är personbilarnas trend mindre kraftig 
-                    än det totala.
-                </p> 
-                <div>
-                    <canvas id="personBilarChart"></canvas>
-                </div>
-
+        
+        <section id="section5" class="section5">
+            <div class="section5_title">
+                <h1>
+                    Finns det några alternativ jag kan använda för att minska utsläppen?
+                </h1>
+                <div class="section_hr"><hr></div>
             </div>
-
-        </section>
-  -->   
-        
-        <div class="road_img">
-            <img src="../images/road.svg" alt="">
-        </div>
-        
-
-
-        <section  id="section5" class="section5">
-            <h2>
-                Finns det några alternativ jag kan använda för att minska utsläppen?
-            </h2>
-            <div class="section_hr"><hr></div>
-        </section>
-
-
-        
-        <section id="section6" class="section6">
-            <div class="section6_Symbols">
+            <div class="section5_Symbols">
                 <div class="symbol">
-                    <img src="../images/TrainAmico.svg" alt="Kollektivtrafik">
+                    <img src="../images/Train-amico.svg" alt="Kollektivtrafik">
                     <p><b>Kollektivtrafik</b></p>
                     <ul>
                         <li><span class="category">Fördelar:</span></li>
                         <ul class="inner-list">
-                            <li>Smidig vid jobbig trafik</li>
-                            <li>Sparar energi</li>
+                            <li><strong>1:</strong> Smidig vid jobbig trafik.</li>
+                            <li><strong>2:</strong> Sparar energi.</li>
                         </ul>
                         <li><span class="category">Nackdelar:</span></li>
                         <ul class="inner-list">
-                            <li>Bestämda tider</li>
-                            <li>Kan bli inställd</li>
-                        </ul>
+                            <li><strong>1:</strong> Bestämda tider.</li>
+                            <li><strong>2:</strong> Kan bli inställd.</li>
+                        </ul> 
                     </ul>
                 </div>
         
                 <div class="symbol">
-                    <img src="../images/ElectricCar.svg" alt="Elbil">
+                    <img src="../images/Electric_car-rafiki.svg" alt="Elbil">
                     <p><b>Elbilar</b></p>
                     <ul>
                         <li><span class="category">Fördelar:</span></li>
                         <ul class="inner-list">
-                            <li>Kan ladda hemma</li>
-                            <li>Tyst motor</li>
+                            <li><strong>1:</strong> Kan ladda hemma.</li>
+                            <li><strong>2:</strong> Tyst motor.</li>
                         </ul>
                         <li><span class="category">Nackdelar:</span></li>
                         <ul class="inner-list">
-                            <li>Klarar bara korta sträckor</li>
-                            <li>Dyra att köpa</li>
+                            <li><strong>1:</strong> Klarar bara korta sträckor.</li>
+                            <li><strong>2:</strong> Dyra att köpa.</li>
                         </ul>
                     </ul>
                 </div>
         
                 <div class="symbol">
-                    <img src="../images/CarDriving.svg" alt="Samåking med bil">
+                    <img src="../images/Car_driving-rafiki.svg" alt="Samåking med bil">
                     <p><b>Samåkning</b></p>
                     <ul>
                         <li><span class="category">Fördelar:</span></li>
                         <ul class="inner-list">
-                            <li>Spendera mer tid med familj/vänner</li>
-                            <li>Skapar nya vänskaper om man är med i en samåksgrupp</li>
+                            <li><strong>1:</strong> Spendera mer tid med familj/vänner.</li>
+                            <li><strong>2:</strong> Skapar nya vänskaper om man är med i en samåksgrupp.</li>
                         </ul>
                         <li><span class="category">Nackdelar:</span></li>
                         <ul class="inner-list">
-                            <li>Potentiellt farligt vod åk med främlingar</li>
-                            <li>Kan ta längre tid om det blir många stopp</li>
+                            <li><strong>1:</strong> Potentiellt farligt vid åk med främlingar.</li>
+                            <li><strong>2:</strong> Kan ta längre tid om det blir många stopp.</li>
                         </ul>
                     </ul>
                 </div>
         
                 <div class="symbol">
-                    <img src="../images/CarDriving.svg" alt="Ruttoptimering GPS">
+                    <img src="../images/GPS_navigator-rafiki.svg" alt="Ruttoptimering GPS">
                     <p><b>Ruttoptimering</b></p>
                     <ul>
                         <li><span class="category">Fördelar:</span></li>
                         <ul class="inner-list">
-                            <li>Många kartappar är gratis och brukar visa den bästa rutten</li>
-                            <li>Bättre rutter är billigare</li>
+                            <li> <strong>1:</strong> Många kartappar är gratis och brukar visa den bästa rutten.</li>
+                            <li><strong>2:</strong> Bättre rutter är billigare.</li>
                         </ul>
                         <li><span class="category">Nackdelar:</span></li>
                         <ul class="inner-list">
-                            <li>Ibland behövs omvägar</li>
-                            <li>GPS är inte alltid uppdaterade till vägförändringar</li>
+                            <li><strong>1:</strong> Ibland behövs omvägar.</li>
+                            <li><strong>2:</strong> GPS är inte alltid uppdaterade till vägförändringar.</li>
                         </ul>
                     </ul>
                 </div>
         
                 <div class="symbol">
-                    <img src="../images/RideBicycle.svg" alt="Cyckel">
+                    <img src="../images/Ride_a_bicycle-rafiki.svg" alt="Cyckel">
                     <p><b>Cykel</b></p>
                     <ul>
                         <li><span class="category">Fördelar:</span></li>
                         <ul class="inner-list">
-                            <li>Inga bensinkostnader</li>
-                            <li>Fortfarande bra för relativt långa sträckor</li>
+                            <li><strong>1:</strong> Inga bensinkostnader.</li>
+                            <li><strong>2:</strong> Fortfarande bra för relativt långa sträckor.</li>
                         </ul>
                         <li><span class="category">Nackdelar:</span></li>
                         <ul class="inner-list">
-                            <li>Väldigt långa sträckor kan vara jobbiga</li>
-                            <li>Inte alla vägar är optimerade för cykel</li>
+                            <li><strong>1:</strong> Väldigt långa sträckor kan vara jobbiga.</li>
+                            <li><strong>2:</strong> Inte alla vägar är optimerade för cykel.</li>
                         </ul>
                     </ul>
                 </div>
         
                 <div class="symbol">
-                    <img src="../images/RideBicycle.svg" alt="Gång">
+                    <img src="../images/Dog_walking-pana.svg" alt="Gång">
                     <p><b>Gång</b></p>
                     <ul>
                         <li><span class="category">Fördelar:</span></li>
                         <ul class="inner-list">
-                            <li>Inga kostnader alls</li>
-                            <li>Smidigt i att ta sig vart som helst</li>
+                            <li><strong>1:</strong> Inga kostnader alls.</li>
+                            <li><strong>2:</strong> Smidigt i att ta sig vart som helst.</li>
                         </ul>
                         <li><span class="category">Nackdelar:</span></li>
                         <ul class="inner-list">
-                            <li>Väldigt långa sträckor kan vara jobbiga</li>
-                            <li>Inte alla vägar är optimerade för gång</li>
+                            <li><strong>1:</strong> Väldigt långa sträckor kan vara jobbiga.</li>
+                            <li><strong>2:</strong> Inte alla vägar är optimerade för gång.</li>
                         </ul>
                     </ul>
-                </div>
-            </div>
-        </section>
-        <section id="section7" class="section7">
-            <h2>Vad blir vår slutsats?</h2>
-            <div class="columns">
-                <div class="column">
-                    <p>
-                        Vi har sett att mängden CO2e-utsläpp har minskat i Umeå kommun. Detta kan vi se med hjälp av våra grafer av det totala utsläppet men även transportsektorns och personbilars utsläpp. Det totala utsläppet hade ökat år 2021 med 10 041 ton CO2e medan transportsektorns utsläpp hade ökat år 2019 med 1,6 procentenheter. Eftersom vår frågeställning var att ta reda på hur mycket just personbilar påverkar miljön i Umeå i jämförelse med den totala siffran så har vi därför jämfört den datan med det totala. Vi kan därför dra slutsatsen att det har blivit bättre även där men att det inte minskade lika mycket som det totala utsläppet. Alternativ till att åka personbil är att ta tåg, använda elbil, samåka eller att ta cykel.
-                    </p>
-                    <p>
-                        Vår granskning av växthusgasutsläppen i Umeå, särskilt från personbilar, har belyst flera viktiga punkter. Först och främst bekräftar data att personbilarnas utsläpp utgör en betydande andel av de totala växthusgasutsläppen i kommunen, trots att både de totala utsläppen och utsläppen från personbilar visar en nedåtgående trend över de senaste åren. Denna trend är uppmuntrande och indikerar att de åtgärder som vidtagits för att minska utsläppen, såsom införande av miljözoner, subventioner för miljövänliga fordon, och förbättrad kollektivtrafik, börjar ge resultat.
-                    </p>
-                </div>
-                <div class="column">
-                    <p>
-                        Vår analys visar även att det finns betydande möjligheter att fortsätta minska växthusgasutsläppen genom att ytterligare minska beroendet av fossila bränslen och traditionella personbilar. För invånarna i Umeå och andra kommuner kan detta innebära att överväga alternativa transportmedel som är mindre miljöbelastande.
-                    </p>
-                    <p>
-                        Slutsatsen är att även om utmaningarna är stora, finns det konkreta steg som var och en kan ta för att bidra till en renare och mer hållbar framtid. Att minska antalet bilresor, övergå till eldrivna fordon, använda kollektivtrafik, cykla eller gå, är alla effektiva sätt att minska personliga koldioxidavtryck. Dessutom är det viktigt att stödja och kräva fortsatta åtgärder från såväl lokala som nationella beslutsfattare för att uppmuntra och underlätta ett skifte mot mer hållbara transportlösningar.
-                    </p>
-                    <p>
-                        Denna insikt bör inte bara ses som en uppmaning till handling för invånarna i Umeå utan som en modell för andra städer att följa, där varje insats räknas och varje förändring bidrar till globala klimatmål. Genom gemensamma ansträngningar kan vi skapa en mer hållbar och ansvarsfull framtid för kommande generationer.
-                    </p>
                 </div>
             </div>
         </section>
@@ -366,9 +247,9 @@
    
     <footer class="footer">
             <div class="footer_container">
-                <h2 class="footer_h2">
+                <h1 class="footer_title">
                     Kommer du att bidra till att minska utsläppen?
-                </h2>
+                </h1>
                 <h3 class="footer_h3">
                     Välj här:
                 </h3>

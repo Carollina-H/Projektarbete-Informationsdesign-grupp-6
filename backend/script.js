@@ -79,20 +79,33 @@ function dataProcessing(data) {
 function createLineChart(years, data) {
     const canvas = document.getElementById('totalaUtsläppLineChart'); // Hämtar canvas-elementet för diagrammet.
     new Chart(canvas, {
-        type: 'line', // Typ av diagram.
+        type: 'bar', // Typ av diagram.
         data: {
             labels: years, // Åren blir x-axelns etiketter.
             datasets: [{
-                label: 'Totala utsläpp (Ton CO2e)', // Namn på dataserien.
+                label: 'Totala utsläpp', // Namn på dataserien.
                 data: data, // Data för diagrammet.
                 borderColor: 'rgba(61, 76, 49, 0.5)', // Färg på linjen.
                 backgroundColor: 'rgba(61, 76, 49, 1)' // Färg på fyllningen under linjen.
             }]
         },
 
-        options: standardChartOptions('Totala utsläpp i Umeå (2018-2022)') // Konfigurerar diagrammets utseende och funktion.
+        options: Object.assign(
+            standardChartOptions('Ton CO2e'), // Använder standardalternativen
+            {
+                 scales: {
+                    y: {
+                        beginAtZero: false, // Börjar inte vid noll.
+                        min: 300000, // Börjar vid 250 000.
+                        
+                    }
+                }
+            }
+        )
     });
 }
+
+
 
 
 // Funktion för att skapa bar-chart.
@@ -105,11 +118,22 @@ function createHistogram(years, data) {
             datasets: [{
                 label: 'Andel av utsläpp från transportsektorn (%)', // Namn på dataserien.
                 data: data, // Data för diagrammet.
-                backgroundColor: 'rgba(61, 76, 49, 0.5)' // Färg på fyllningen under linjen.
+                backgroundColor: 'rgba(56, 62, 73, 1)' // Färg på fyllningen under linjen.
             }]
         },
-        options: standardChartOptions('Andel av utsläpp från transportsektorn i Umeå (2018-2022)') // Konfigurerar diagrammets utseende och funktion.
-    });
+        
+        options: Object.assign(
+        standardChartOptions('Procent (%)'), // Konfigurerar diagrammets utseende och funktion.
+        {
+        scales: {
+            y: {
+                beginAtZero: false, // Börjar inte vid noll.
+                min: 40 // Börjar vid 40%.
+            }
+        }
+    }
+)
+});
 }
 
 // Funktion för att skapa bar-chart.
@@ -122,15 +146,15 @@ function createCarChart(years, carData, totalData) {
             datasets: [{
                 label: 'Totala utsläpp', // Namn på dataserien.
                 data: totalData, // Data för diagrammet.
-                backgroundColor: 'rgba(54, 162, 235, 0.5)' // Färg på fyllningen under linjen.
+                backgroundColor: 'rgba(61, 76, 49, 1)' // Färg på fyllningen under linjen.
 
             }, {
                 label: 'Personbilars utsläpp', // Namn på dataserien.
                 data: carData, // Data för diagrammet.
-                backgroundColor: 'rgba(255, 99, 132, 0.5)' // Färg på fyllningen under linjen.
+                backgroundColor: 'rgb(255, 115, 115, 1)' // Färg på fyllningen under linjen.
             }]
         },
-        options: standardChartOptions('Jämförelse av bilars utsläpp och totala utsläpp i Umeå (2018-2022)')
+        options: standardChartOptions('Ton CO2e')
     });
 }
 
@@ -139,8 +163,8 @@ function standardChartOptions(title) {
     return {
         responsive: true, // Gör diagrammet responsivt.
         plugins: {
-            legend: { display: true, position: 'top' }, // Visar förklaring ovanför diagrammet.
-            title: { display: true, text: title } // Visar en titel på diagrammet.
+            legend: { display: false}, // Gömmer förklaring ovanför diagrammet.
+            title: { display: true, text: title, position: "left"} // Gömmer en titel på diagrammet.
         }
     };
 }
@@ -167,3 +191,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
