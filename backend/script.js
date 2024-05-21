@@ -105,7 +105,7 @@ function createHistogram(years, data) {
             datasets: [{
                 label: 'Andel av utsläpp från transportsektorn (%)', // Namn på dataserien.
                 data: data, // Data för diagrammet.
-                backgroundColor: 'rgba(54, 162, 235, 0.5)' // Färg på fyllningen under linjen.
+                backgroundColor: 'rgba(61, 76, 49, 0.5)' // Färg på fyllningen under linjen.
             }]
         },
         options: standardChartOptions('Andel av utsläpp från transportsektorn i Umeå (2018-2022)') // Konfigurerar diagrammets utseende och funktion.
