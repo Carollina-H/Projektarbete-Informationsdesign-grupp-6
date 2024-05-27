@@ -154,7 +154,14 @@ function createCarChart(years, carData, totalData) {
                 backgroundColor: 'rgb(255, 115, 115, 1)' // Färg på fyllningen under linjen.
             }]
         },
-        options: standardChartOptions('Ton CO2e')
+        options: Object.assign(
+        standardChartOptions('Ton CO2e'),
+        {
+            plugins: {
+                legend: {display: true}
+            }
+        }
+    )
     });
 }
 
@@ -164,7 +171,7 @@ function standardChartOptions(title) {
         responsive: true, // Gör diagrammet responsivt.
         plugins: {
             legend: { display: false}, // Gömmer förklaring ovanför diagrammet.
-            title: { display: true, text: title, position: "left"} // Gömmer en titel på diagrammet.
+            title: { display: true, text: title, position: "left"} // Anger den använda enheten.
         }
     };
 }
